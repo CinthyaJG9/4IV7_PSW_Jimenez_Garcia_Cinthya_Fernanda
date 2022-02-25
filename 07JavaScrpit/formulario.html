@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Ejemplo de Formulario</title>
     <script>languaje="JavaScript" type="text/JavaScript"
-    src="./JS/validar"
-    </script>
-    src="./JS/validar"
+    src="./JS/validar.js"</script>
+   
 </head>
 <body>
-    <form method="GET" name="formulario" action="formulario.html"></form>
+    <form method="GET" name="formulario"
+    onsubmit="return validar(this)" action="formulario.html"
+    >
+    
     Nombre:
     <br>
     <input type="text" name="nombre" size="20">
