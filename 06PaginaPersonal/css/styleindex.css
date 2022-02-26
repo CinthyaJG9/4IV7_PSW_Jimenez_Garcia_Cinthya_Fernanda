@@ -26,25 +26,26 @@
 .menu{
 
     margin: 10px solid red;
-    float: left;
-    width:100%;
+   
+    
     text-align: center;  
     background-color: red;  
     font-size: 25px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     padding-top: 10px;
     padding-bottom: 10px;
-    
+    padding-left: 0%;
+    padding-right: 0%;
     display: block;
-    white-space: nowrap;
-    margin-right: 5px;
+    
+   
     list-style: none;
     border: 10px solid aliceblue;
 }
 .title{
 
     background-image: url(https://static.wikia.nocookie.net/featteca/images/1/10/Marvel_Comics_.jpg/revision/latest/scale-to-width-down/649?cb=20200401110738&path-prefix=es);
-    width: 100%;
+    
     text-align: center;
     color: azure;
     border:10px solid antiquewhite;
