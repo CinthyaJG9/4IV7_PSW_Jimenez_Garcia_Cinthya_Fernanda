@@ -1,0 +1,11 @@
+@keyframes animacion{
+
+    from{
+
+        background-color: rosybrown;
+    }
+    to{
+
+        background-color: royalblue;
+    }
+}
