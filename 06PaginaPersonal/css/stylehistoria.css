@@ -176,3 +176,28 @@
     background-color: skyblue;
     color: white;
 }
+
+@keyframes fondo{
+
+    from{
+
+        background-color: skyblue;
+    }
+    to{
+
+        background-color: slateblue;
+    }
+}
+
+.marvelexp2{
+
+    width:100%;
+    background-color: skyblue;
+    color: slategray;
+    text-align: center;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fondo 10s alternate infinite;
+}
