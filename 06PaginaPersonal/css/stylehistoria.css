@@ -38,8 +38,7 @@
 }
 .origen{
     
-    width: 100%;
-    height:100%;
+    
     border:18px solid azure;
     border-top: 18px solid aliceblue;
     border-radius: 58%;
@@ -57,3 +56,123 @@
     background-color: aqua;
 }
 
+.timelypub3{
+
+    text-align: right;
+    image-orientation: flip;
+}
+
+.timelypub4{
+
+    background-image: url(https://www.eslahoradelastortas.com/blog/media/2019/05/decadas40.jpg);
+    text-align: left;
+    color: aquamarine;
+}
+.timelypub5{
+
+    text-align: right;
+    image-orientation: flip;
+}
+.timelypub6{
+
+    background-image: url(https://www.tebeosfera.com/T3content/img/T3_documentos/a/2/b18I-cabecera2.jpg);
+    text-align: left;
+    color: azure;
+}
+.timelypub7{
+
+    text-align: right;
+    image-orientation: flip;
+}
+.timelypub8{
+
+    background-image: url(https://i.pinimg.com/originals/8e/e5/fc/8ee5fce552d58ba3349a69618fd5c121.jpg);
+    text-align: left;
+    color: white;
+}
+.timelypub9{
+
+    text-align: right;
+    image-orientation: flip;
+}
+.timelypub10{
+
+    background-image: url(https://seeklogo.com/images/M/marvel-comics-old-logo-87B4DB5E05-seeklogo.com.png);
+    text-align: left;
+    color: white;
+}
+.atlascom, .atlascom2, .atlascom3, .atlascom4, .atlascom5{
+
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: saddlebrown;
+    color: white;
+}
+
+@keyframes animacion2{
+
+    from{
+
+        transform: rotate(0deg);
+        margin-left: 0;
+    }
+    to{
+        transform: rotate(180deg);
+        margin-left: 85vw;
+    }
+}
+
+.atlascom{
+
+    width: 100%;
+    background-color: salmon;
+    color: sandybrown;
+    font-size:2.1rem;
+    font-size:1.8rem;
+    border-radius:28px;
+    animation-name: animacion2;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: initial;
+    animation-direction:initial;
+    animation-delay: 8s;
+    text-align: center;
+}
+.atlascom5{
+
+    text-align: right;
+    image-orientation: flip;
+}
+
+.marvelcom, .marvelcom2, .marvelcom3{
+
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: seagreen;
+    color: white;
+}
+.marvelcom{
+
+    
+    border:24px solid seashell;
+    border-top: 24px solid sienna;
+    border-bottom: 24px solid silver;
+    border-radius: 58%;
+    animation: girar 2s linear ;
+    animation-delay: 16s;
+    text-align: center;
+}
+
+.marvelcom3{
+
+    text-align: right;
+    image-orientation: flip;
+}
+
+.marvelexp, .marvelexp2, .marvelexp3, .marvelexp4, .marvelexp5, .marvelexp6{
+
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: skyblue;
+    color: white;
+}
