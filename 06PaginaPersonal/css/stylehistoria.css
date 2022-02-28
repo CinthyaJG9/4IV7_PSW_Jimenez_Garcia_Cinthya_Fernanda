@@ -21,7 +21,7 @@
 
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: violet;
+    background-color: rgb(172, 90, 172);
 }
 
 @keyframes girar{
@@ -43,7 +43,7 @@
     border-top: 18px solid aliceblue;
     border-radius: 58%;
     animation: girar 2s linear;
-    font-size: 16px;
+    font-size: 24px;
     background-color: antiquewhite;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
@@ -52,7 +52,7 @@
 .timelypub,.timelypub2, .timelypub3, .timelypub4, .timelypub5, .timelypub6, .timelypub7, .timelypub8, .timelypub9, .timelypub10{
 
     
-    font-size: 16px;
+    font-size: 24px;
     font-family: Arial, Helvetica, sans-serif;
     background-color: aqua;
 }
@@ -104,7 +104,7 @@
 }
 .atlascom, .atlascom2, .atlascom3, .atlascom4, .atlascom5{
 
-    font-size: 16px;
+    font-size: 24px;
     font-family: Arial, Helvetica, sans-serif;
     background-color: saddlebrown;
     color: white;
@@ -127,7 +127,7 @@
 
     width: 100%;
     background-color: salmon;
-    color: sandybrown;
+    color: rgb(172, 113, 62);
     font-size:2.1rem;
     font-size:1.8rem;
     border-radius:28px;
@@ -147,7 +147,7 @@
 
 .marvelcom, .marvelcom2, .marvelcom3{
 
-    font-size: 16px;
+    font-size: 24px;
     font-family: Arial, Helvetica, sans-serif;
     background-color: seagreen;
     color: white;
@@ -172,7 +172,7 @@
 
 .marvelexp, .marvelexp2, .marvelexp3, .marvelexp4, .marvelexp5, .marvelexp6{
 
-    font-size: 16px;
+    font-size: 24px;
     font-family: Arial, Helvetica, sans-serif;
     background-color: skyblue;
     color: white;
@@ -216,7 +216,7 @@
 }
 .marveljs, .marveljs1, .marveljs2, .marveljs3, .marveljs4{
 
-    font-size: 16px;
+    font-size: 24px;
     font-family: Arial, Helvetica, sans-serif;
     background-color: rosybrown;
     color: white;
@@ -249,7 +249,7 @@
 }
 .ascensocri, .ascensocri2, .ascensocri3, .ascensocri4, .ascensocri5{
 
-    font-size: 16px;
+    font-size: 24px;
     font-family: Arial, Helvetica, sans-serif;
     background-color: maroon;
     color: white;
@@ -286,7 +286,7 @@
 
 .marveljq, .marveljq2, .marveljq3, .marveljq4{
 
-    font-size: 16px;
+    font-size: 24px;
     font-family: Arial, Helvetica, sans-serif;
     background-color: mediumvioletred;
     color: white;
@@ -317,8 +317,26 @@
 }
 .reiniciouni, .reiniciouni2, .reiniciouni3{
 
-    font-size: 16px;
+    font-size: 24px;
     font-family: Arial, Helvetica, sans-serif;
     background-color: mediumblue;
     color: white;
+}
+
+.reiniciouni{
+
+    width:100%;
+    background-color: skyblue;
+    color: mediumorchid;
+    text-align: center;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fondo 18s alternate infinite;
+}
+
+body{
+
+    background-color: black;
 }
