@@ -1,0 +1,27 @@
+.menu{
+
+    margin: 10px solid red;
+   
+    
+    text-align: center;  
+    background-color: red;  
+    font-size: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0%;
+    padding-right: 0%;
+    display: block;
+    
+   
+    list-style: none;
+    border: 10px solid aliceblue;
+}
+
+body{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    align-items: center;
+    background-color: gainsboro;
+
+}
