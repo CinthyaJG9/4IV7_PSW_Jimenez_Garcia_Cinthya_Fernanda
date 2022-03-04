@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla Dinámica</title>
+    <script languaje="JavaScript" type="text/JavaScript"
+    src="./JS/tabla.js"></script>
+</head>
+<body>
+    <form method="post" name="tabla"
+    onsubmit="return validar(this)" action="tabla.html">
+    <table id="impuesto"></table>
+    <div class="form">
+        <label for="valor"> Ingrese el valor de su automóvil</label>
+    <input class="form" id="valor" name="valor" type= "number">
+</div>
+<br>
+<div class="form">
+    <label for="cuota"> Ingrese la cuota inicial: </label>
+<input class="form" id="cuotai" name="cuotai" type= "number">
+</div>
+<br>
+<div class="form">
+    <label for="periodo"> Ingrese el periodo en meses (3, 6, 9, 12, 18)</label>
+<input class="form" id="periodo" name="periodo" type= "number">
+</div>
+<br>
+<div>
+    <button onclick="agregar ()" class="btn-succes"> Agregar</button>
+</div>
+        
+
+
+        
+    
+</body>
+</html>
