@@ -17,7 +17,7 @@
     
     <table id="impuesto" class="table-dark"></table>
     <form method="post" name="formulario"
-    onsubmit="return validar(this)" action="tabla.html">
+    onsubmit="return operacion(this)" action="tabla.html">
     <div class="form-group">
         <label for="valor"> Ingrese el valor de su automóvil</label>
     <input class="form-control" id="valor" name="valor" type= "number">
@@ -33,17 +33,16 @@
 <input class="form-control" id="periodo" name="periodo" type= "number">
 </div>
 <br>
+<div class="form-group">
+    <label for="periodo"> El interés compuesto es</label>
+<input class="form-control" id="final" name="final" onchange="final"(this.value) disabled type= "number">
+</div>
+<br>
 <div>
     <button onclick="agregar()" class=" btn btn-succes"> Agregar</button>
 </div>
 </form>
-<table id="total">
-    <tr>
-        <td>
-            total: 
-        </td>
-    </tr>
-</table>
+
         
 
 

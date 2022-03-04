@@ -30,11 +30,11 @@ function operacion(formulario){
       alert("El valor del automóvil debe estar entre 100,000.00 y 1,000,000.00");
   }
   if(formulario.cuotai.value < formulario.valor.value*0.1){
-      alert("El valor minimo de la cuota inicial es del 10% del automovil");
+      alert("El valor minimo de la cuota inicial debe ser 10% del automovil");
   }
   var checkOK = "0123456789";
-  var checkStr = formulario.Vautomovil.value;
-  var todoesvalido = true;
+  var checkStr = formulario.valor.value;
+  var allOK = true;
 
   for(var i = 0; i < checkStr.length; i++){
       var ch = checkStr.charAt(i);
@@ -44,20 +44,20 @@ function operacion(formulario){
           }    
       }
       if(j == checkOK.length){
-          todoesvalido = false;
+          allOK = false;
           break;
       }
   }
-  if(!todoesvalido){
-      alert("Escriba unicamente números en el campo VALOR DEL AUTO");
-      formulario.Vautomovil.focus();
-      return false;
-  }
-  var va = parseFloat(formulario.Vautomovil.value);
-  var ci = parseFloat(formulario.CInicial.value);
-  var p = parseInt(formulario.Periodo.value);
-  var pi = va-ci;
-  var T = pi*(1.394)**p;
-  var F = document.formulario.VFinal;
-  F.value = T;
+  if(!allOK){
+    alert("Escriba unicamente números en el campo VALOR");
+    formulario.valor.focus();
+    return false;
+}
+var val = parseFloat(formulario.valor.value);
+var cuoi = parseFloat(formulario.cuotai.value);
+var per = parseInt(formulario.periodo.value);
+var other = val-cuoi;
+var agn = other*(0.0394)*per;
+var final = document.formulario.total;
+final.value = agn;
 }
