@@ -5,35 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabla Dinámica</title>
+   
+    <link rel="stylesheet" href="css/style.css">
     <script languaje="JavaScript" type="text/JavaScript"
     src="./JS/tabla.js"></script>
 </head>
+
 <body>
-    <form method="post" name="tabla"
+    
+
+    
+    <table id="impuesto" class="table-dark"></table>
+    <form method="post" name="formulario"
     onsubmit="return validar(this)" action="tabla.html">
-    <table id="impuesto"></table>
-    <div class="form">
+    <div class="form-group">
         <label for="valor"> Ingrese el valor de su automóvil</label>
-    <input class="form" id="valor" name="valor" type= "number">
+    <input class="form-control" id="valor" name="valor" type= "number">
 </div>
 <br>
-<div class="form">
+<div class="form-group">
     <label for="cuota"> Ingrese la cuota inicial: </label>
-<input class="form" id="cuotai" name="cuotai" type= "number">
+<input class="form-control" id="cuotai" name="cuotai" type= "number">
 </div>
 <br>
-<div class="form">
+<div class="form-group">
     <label for="periodo"> Ingrese el periodo en meses (3, 6, 9, 12, 18)</label>
-<input class="form" id="periodo" name="periodo" type= "number">
+<input class="form-control" id="periodo" name="periodo" type= "number">
 </div>
 <br>
 <div>
-    <button onclick="agregar ()" class="btn-succes"> Agregar</button>
+    <button onclick="agregar()" class=" btn btn-succes"> Agregar</button>
 </div>
+</form>
+<table id="total">
+    <tr>
+        <td>
+            total: 
+        </td>
+    </tr>
+</table>
         
 
 
         
-    
+    <footer>
+        Jiménez García Cinthya Fernanda
+        <br>
+        Grupo 4IV7
+        <br>
+        Boleta 2021090387
+        <br>
+    </footer>
 </body>
 </html>
