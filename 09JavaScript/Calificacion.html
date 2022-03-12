@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calificacion</title>
+    <link rel="stylesheet" href="css/stylecalificacion.css">
+</head>
+<body>
+    <form name="formulario" method="post" action="">
+        
+        <br>
+        <table>
+        <tr>
+            <td>
+                Introduce la calificación del primer parcial: 
+            </td>
+            <td>
+                <input type="text" name="cantidad1"
+                onkeypress="return validarn(event)">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Introduce la calificación del segundo parcial: 
+            </td>
+            <td>
+                <input type="text" name="cantidad2"
+                onkeypress="return validarn(event)">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Introduce la calificación del tercer parcial: 
+            </td>
+            <td>
+                <input type="text" name="cantidad3"
+                onkeypress="return validarn(event)">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Introduce la calificación del examen final: 
+            </td>
+            <td>
+                <input type="text" name="cantidad4"
+                onkeypress="return validarn(event)">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Introduce la calificación del trabajo final: 
+            </td>
+            <td>
+                <input type="text" name="cantidad5"
+                onkeypress="return validarn(event)">
+            </td>
+        </tr>
+        <tr>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+
+            </td>
+            <td>
+                <input type="button" value="Calcular"
+                name="enviar" onclick="op()">
+            </td>
+        </tr>
+        <tr>
+            <td>
+               El promedio final es:
+            </td>
+            <td>
+                <input type="text" name="total" id="total"
+                readonly="readonly" class="input_text">
+            </td>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td>
+                <input type="button" value="Borrar datos"
+                name="borrar" onclick="borrard()">
+            </td>
+        </tr>
+    </table>
+    </form>
+    <script src="js/calificacion.js">
+
+    </script>
+     <a href="index.html">Regresar a principal</a>    
+</body>
+</html>
