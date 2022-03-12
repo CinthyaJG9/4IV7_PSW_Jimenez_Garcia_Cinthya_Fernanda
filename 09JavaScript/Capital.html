@@ -4,17 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicios de JS</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Capital</title>
 </head>
 <body>
     <form name="formulario" method="post" action="">
-        <label>Formulario para el cálculo de inversión de capital al 3.7% anual</label>
+        
         <br>
         <table>
         <tr>
             <td>
-                Introduce la cantidad que deseas invertir
+                Introduce la cantidad que deseas invertir: 
             </td>
             <td>
                 <input type="text" name="cantidad"
@@ -23,16 +22,25 @@
         </tr>
         <tr>
             <td>
+                Introduce el número de meses a los que deseas invertir: 
+            </td>
+            <td>
+                <input type="text" name="meses"
+                onkeypress="return validarn(event)">
+            </td>
+        </tr>
+        <tr>
+            <td>
 
             </td>
             <td>
-                <input type="button" value="Calcular Interes"
+                <input type="button" value="Calcular Ganancia"
                 name="enviar" onclick="interes()">
             </td>
         </tr>
         <tr>
             <td>
-                Su saldo total con el interés al 3.7% anual es de:
+               Su ganancia total será de:
             </td>
             <td>
                 <input type="text" name="sueldoI" id="cantidadI"
@@ -48,10 +56,9 @@
         </tr>
     </table>
     </form>
-    <script src="js/interes.js">
+    <script src="js/capital.js">
 
     </script>
      <a href="index.html">Regresar a principal</a>
-    
 </body>
 </html>
