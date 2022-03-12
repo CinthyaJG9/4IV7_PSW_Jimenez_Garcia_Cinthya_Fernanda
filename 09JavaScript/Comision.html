@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comisiones</title>
+</head>
+<body>
+    <form name="formulario" method="post" action="">
+        
+        <br>
+        <table>
+        <tr>
+            <td>
+                Introduce la cantidad de la primera venta: 
+            </td>
+            <td>
+                <input type="text" name="cantidad"
+                onkeypress="return validarn(event)">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Introduce la cantidad de la segunda venta: 
+            </td>
+            <td>
+                <input type="text" name="cantidad"
+                onkeypress="return validarn(event)">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Introduce la cantidad de la tercera venta: 
+            </td>
+            <td>
+                <input type="text" name="cantidad"
+                onkeypress="return validarn(event)">
+            </td>
+        </tr>
+        <tr>
+            <td>
+
+            </td>
+            <td>
+                <input type="button" value="Calcular Ganancia"
+                name="enviar" onclick="interes()">
+            </td>
+        </tr>
+        <tr>
+            <td>
+               Su ganancia total será de:
+            </td>
+            <td>
+                <input type="text" name="sueldoI" id="cantidadI"
+                readonly="readonly" class="input_text">
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="button" value="Borrar datos"
+                name="borrar" onclick="borrard()">
+            </td>
+        </tr>
+    </table>
+    </form>
+    <script src="js/comision.js">
+
+    </script>
+     <a href="index.html">Regresar a principal</a>
+</body>
+</html>
