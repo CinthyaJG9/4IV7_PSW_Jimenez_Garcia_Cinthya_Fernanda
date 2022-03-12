@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comisiones</title>
+    <link rel="stylesheet" href="css/stylecomision.css">
 </head>
 <body>
     <form name="formulario" method="post" action="">
@@ -16,7 +17,7 @@
                 Introduce la cantidad de la primera venta: 
             </td>
             <td>
-                <input type="text" name="cantidad"
+                <input type="text" name="cantidad1"
                 onkeypress="return validarn(event)">
             </td>
         </tr>
@@ -25,7 +26,7 @@
                 Introduce la cantidad de la segunda venta: 
             </td>
             <td>
-                <input type="text" name="cantidad"
+                <input type="text" name="cantidad2"
                 onkeypress="return validarn(event)">
             </td>
         </tr>
@@ -34,8 +35,22 @@
                 Introduce la cantidad de la tercera venta: 
             </td>
             <td>
-                <input type="text" name="cantidad"
+                <input type="text" name="cantidad3"
                 onkeypress="return validarn(event)">
+            </td>
+        </tr>
+        <tr>
+        <td>
+            Introduzca su sueldo base: 
+        </td>
+        <td>
+            <input type="text" name="cantidad4"
+            onkeypress="return validarn(event)">
+        </td>
+    </tr>
+        <tr>
+            <td>
+
             </td>
         </tr>
         <tr>
@@ -43,16 +58,34 @@
 
             </td>
             <td>
-                <input type="button" value="Calcular Ganancia"
-                name="enviar" onclick="interes()">
+                <input type="button" value="Calcular"
+                name="enviar" onclick="op()">
             </td>
         </tr>
         <tr>
             <td>
-               Su ganancia total será de:
+               Su sueldo base es de:
             </td>
             <td>
-                <input type="text" name="sueldoI" id="cantidadI"
+                <input type="text" name="sueldoB" id="SueldoB"
+                readonly="readonly" class="input_text">
+            </td>
+        </tr>
+        <tr>
+            <td>
+               Sus comisiones son de:
+            </td>
+            <td>
+                <input type="text" name="comisiones" id="comisiones"
+                readonly="readonly" class="input_text">
+            </td>
+        </tr>
+        <tr>
+            <td>
+               Su sueldo total es de:
+            </td>
+            <td>
+                <input type="text" name="sueldoT" id="sueldoT"
                 readonly="readonly" class="input_text">
             </td>
         </tr>
