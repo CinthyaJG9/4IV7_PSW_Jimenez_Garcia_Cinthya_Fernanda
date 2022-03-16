@@ -27,8 +27,29 @@ function op(){
     var mesNacJ=parseInt(mesNac);
     var agnoNacJ=parseInt(agnoNac);
     
+    while (diaHoyJ>31 || diaNacJ>31) {
+        alert("Por favor verifique el día, puesto que no es válido");
+        return false;
+        
+    }
+    while (mesHoyJ>12 || mesNacJ>12) {
+        alert("Por favor verifique el mes, puesto que no es válido");
+        return false;
+        
+    }
+    while (agnoHoyJ>2022) {
+        alert("Por favor introduzca el año actual correctamente");
+        return false;
+        
+    }
+    while (agnoNacJ>agnoHoyJ) {
+        alert("Por favor verifique que los años estén en orden correcto, ya que la operación es inválida");
+        return false;
+        
+    }
     var edad=agnoHoyJ-agnoNacJ;
 
+    
         if (mesNacJ>mesHoyJ) {
             edad-=1;
                
@@ -40,16 +61,13 @@ function op(){
              }
             
          }
-        }
-
-        if (diaNacJ==29) {
-            if (mesNacJ==02) {
-                while (agnoNacJ%4==0) {
-                    edad=(agnoHoyJ-agnoNacJ)/4
-                   
-                }
-            }
+         
             
+        }
+        
+
+        if(agnoNacJ%4==0){
+            edad=Math.trunc(edad/4)
         }
 
     
@@ -62,9 +80,13 @@ function borrard(){
 
     document.formulario.cantidad1.value="";
     document.formulario.cantidad2.value="";
+    document.formulario.cantidad3.value="";
+    document.formulario.cantidad4.value="";
+    document.formulario.cantidad5.value="";
+    document.formulario.cantidad6.value="";
     
     document.formulario.totalm.value="";
-    document.formulario.totalh.value="";
+    
     
     
 }
