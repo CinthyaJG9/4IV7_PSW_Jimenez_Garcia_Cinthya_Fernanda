@@ -1,3 +1,24 @@
+//problema1
+
+function problema1(){
+
+    var p1_input=document.querySelector('#p1-input').value;
+    var p1_arreglo=p1_input.split(' ').reverse();
+
+    var p1_newStr=' ';
+    p1_arreglo.forEach(function(palabra, i){
+
+        if(i!=0||i!=p1_arreglo.length){
+            p1_newStr+=' ';
+            p1_newStr+=palabra;
+        }
+        
+    })
+
+    document.querySelector('#p1-output').textContent=p1_newStr;
+}
+
+
 //problema2
 
 function problema2(){
@@ -18,21 +39,10 @@ function problema2(){
     var vector1=[p2_x1, p2_x2, p2_x3, p2_x4, p2_x5];
     var vector2=[p2_y1, p2_y2, p2_y3, p2_y4, p2_y5];
 
-    vector1=vector1.sort(function(x, y){
-
-        return y-x;
-    });
-
-    vector2=vector2.sort(function(x, y){
-
-        return y-x;
-    });
-
-    vector2=vector2.reverse();
 
     var p2_resultado=0;
 
-    for(var i=0; i<vector1.length; i++){
+    for(var i=0; i<vector2.length; i++){
 
         p2_resultado+= vector1[i]*vector2[i];
     }
