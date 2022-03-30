@@ -32,15 +32,43 @@ public class Parametros extends HttpServlet {
             /* TODO output your page here. You may use following sample code. */
             
             String nombre="";
-            nombre=request.getParameter("nombre");
+            int telefono=0;
+            String correo="";
             
+            String ip, nombremaquina, ip2 = null;
+            int puerto;
+           
+            
+            
+            nombre=request.getParameter("nombre");
+            telefono= Integer.parseInt(request.getParameter("telefono"));
+            correo=request.getParameter("correo");
+            ip=request.getLocalAddr();
+            puerto= request.getLocalPort();
+            nombremaquina=request.getLocalName();
+           
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
             out.println("<title>Servlet Parametros</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Hola Mundo, tu nombre es: "+ nombre +"</h1>");
+            out.println("<h1>Hola Mundo, tu nombre es: "+ nombre +"</h1>"
+            + "<br>"
+                    + "<h1>Tu telefono es: "+telefono+" </h1>"
+                    + "<br>"
+                    + "<h1>Tu Correo es: "+correo+" </h1>"
+                    + "<br>"
+                    + "<h1>El nombre de la maquina es: "+nombremaquina+" </h1>"
+                    + "<br>"
+                    + "<h1>IP local(servidor) es: "+ip+" </h1>"
+                    + "<br>"
+                    + "<h1>El puerto es: "+puerto+" </h1>"
+                    + "<br>"
+                    + "<h1>IP remota es: "+ip2+" </h1>"
+                    + "<br>"
+                    + "<a href = 'index.html'>Regresar al Principal</a>");
+            
             out.println("</body>");
             out.println("</html>");
         }
