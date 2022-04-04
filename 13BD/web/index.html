@@ -7,6 +7,7 @@ and open the template in the editor.
 <html>
     <head>
         <title>TODO supply a title</title>
+         <link rel="stylesheet" href="style.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
@@ -19,5 +20,95 @@ and open the template in the editor.
             <a href="ConsultarAlumnos">Ver Lista de Alumno de Batiz</a>
             
         </div>
+        <div class="registro">
+            <br>
+            <h1>
+                Registrar nuevo alumno de Bátiz
+            </h1>
+            <br>
+            <form method="post" name="registro" action="RegistrarAlumno">
+                <label>
+                    Nombre del alumno
+                </label>
+                <br>
+                <input type="text" name="nombre">
+                <br>
+                <label>
+                    Apellido Paterno
+                </label>
+                <br>
+                <input type="text" name="appat">
+                <br>
+                <label>
+                    Apellido Materno
+                </label>
+                <br>
+                <input type="text" name="apmat">
+                <br>
+                <label>
+                    Boleta
+                </label>
+                <br>
+                <input type="text" name="boleta">
+                <br>
+                <label>
+                    Telefono
+                </label>
+                <br>
+                <input type="text" name="tel">
+                <br>
+                <input type="submit" value="Registrar Nuevo Alumno" name="enviar" onkeypress="return registrar(event)">
+                <br>
+                <input type="reset" value="Borrar Datos">
+            </form>
+            
+        </div>
+        <div class="eliminar">
+            <form method="get" name="eliminar" action="EliminarAlumno">
+                <br>
+                <label>
+                    Ingrese la boleta del alumno que desea darse de baja
+                </label>
+                <br>
+                <input type="text" name="eliminarboleta">
+                <br>
+                <input type="submit" value="Alumno Eliminado">
+                
+            </form>
+            
+        </div>
+         <div class="editar">
+            <br>
+            <h1>Editar Alumno</h1>
+            <br>
+            <h2>Ingrese los datos que desea modificar</h2>
+            <form method="post" name="modificar" action="EditarAlumno" >
+                <label> Boleta (obligatorio)</label>
+                <br>
+                <input type="text" name="boleta"  >
+                <br>
+                <label> Nombre del alumno </label>
+                <br>
+                <input type="text" name="nombre"  >
+                <br>
+                <label> Apellido Paterno </label>
+                <br>
+                <input type="text" name="appat"  >
+                <br>
+                <label> Apellido Materno </label>
+                <br>
+                <input type="text" name="apmat"  >
+                <br>
+                <label> Telefono </label>
+                <br>
+                <input type="text" name="tel"  >
+                <br>
+                <input type="submit" value="Modificar datos" name="enviar" >
+                <br>
+                <input type="reset" value="Borrar Datos" >
+            </form>
+         </div>
+             <script src="js.js"></script>
+
     </body>
 </html>
