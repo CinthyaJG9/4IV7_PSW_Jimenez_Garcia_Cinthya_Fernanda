@@ -1,9 +1,10 @@
 <%-- 
-    Document   : registroalumno
-    Created on : 4/04/2022, 03:25:10 PM
+    Document   : buscar
+    Created on : 21/04/2022, 07:39:22 PM
     Author     : cferg
 --%>
 
+<%@page import="jdk.nashorn.internal.runtime.Debug.id(Object)"%>
 <%@page contentType="text/html" language="java"
         import="java.sql.*, java.util.*, java.text.*" 
         pageEncoding="UTF-8"%>
@@ -53,7 +54,7 @@
             
             try{
                 //necesitamos los parametros
-                String q = "select * from docentereal";
+                String q = "select * from docentereal where numempleado="+id;
                 
                 set = con.createStatement();
                 
@@ -63,13 +64,13 @@
                 
                 %>
                 <tr>
-                    <td><%=rs.getInt("num_empleado")%></td>
+                    <td><%=rs.getInt("numempleado")%></td>
                     <td><%=rs.getString("nombre")%></td>
                     <td><%=rs.getString("appat")%></td>
                     <td><%=rs.getString("apmat")%></td>
                     <td><%=rs.getString("sex")%></td>
                     <td><%=rs.getString("fechanac")%></td>
-                    <td><a href="editarperfil.jsp?id=<%=rs.getInt("num_empleado")%>" >Editar</a></td>
+                    <td><a href="editarperfil.jsp?id=<%=rs.getInt("boleta")%>" >Editar</a></td>
                     
                 </tr>
                 <%

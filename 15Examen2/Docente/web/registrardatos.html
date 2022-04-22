@@ -6,6 +6,8 @@ and open the template in the editor.
 -->
 <html>
     <head>
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,19 +15,19 @@ and open the template in the editor.
     
         <body>
         <div class="formulario">
-            <form name="formulario 1" method="post"
+            <form name="formulario" method="post"
                 action="registrardatos.jsp">
                 <label>Nombre</label>
                 <br>
-                <input type="text" name="nombre">
+                <input type="text" name="nombre" onkeypress="return validarn(event)">
                 <br>
                 <label>Apellido paterno</label>
                 <br>
-                <input type="text" name="appat">
+                <input type="text" name="appat" onkeypress="return validarn(event)">
                 <br>
                 <label>Apellido materno</label>
                 <br>
-                <input type="text" name="apmat">
+                <input type="text" name="apmat" onkeypress="return validarn(event)">
                 <br>
                 <label>Sexo(F o M)</label>
                 <br>
@@ -40,7 +42,7 @@ and open the template in the editor.
                 <input type="text" name="numempleado">
                 <br>
                 <br>
-                <input type="submit" value="Registrar">
+                <input type="submit" value="Registrar" >
                 <br>
                 <input type="reset" value="Borrar Datos">
             </form>

@@ -40,8 +40,8 @@
                 appat = request.getParameter("appat");
                 apmat = request.getParameter("apmat");
                 sex = request.getParameter("sexo");
-                numeroempleado = Integer.parseInt(request.getParameter("numempleado"));
-                fechanac=request.getParameter("fechanac");
+                numeroempleado = Integer.parseInt(request.getParameter("num_empleado"));
+                fechanac=request.getParameter("fechanacimiento");
 
                 set = con.createStatement();
                 
