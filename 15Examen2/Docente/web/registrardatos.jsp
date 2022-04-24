@@ -25,7 +25,7 @@
         URL = "jdbc:mysql://localhost/docente";
         userName = "Cinthya";
         password = "cecyt9jigc";
-        driver = "com.mysql.jdbc.Driver";
+        driver = "com.mysql.cj.jdbc.Driver";
         
         try{
             Class.forName(driver);
@@ -40,13 +40,13 @@
                 appat = request.getParameter("appat");
                 apmat = request.getParameter("apmat");
                 sex = request.getParameter("sexo");
-                numeroempleado = Integer.parseInt(request.getParameter("num_empleado"));
-                fechanac=request.getParameter("fechanacimiento");
+                numeroempleado = Integer.parseInt(request.getParameter("numempleado"));
+                fechanac=request.getParameter("fechanac");
 
                 set = con.createStatement();
                 
-                String q = "insert into docentereal"
-                        + "values ("+nom+", '"+appat+"', '"+apmat+"', '"+sex+"', '"+numeroempleado+"','"+fechanac+"')";
+                String q = "insert into docentereal(nombre, appat, apmat, sexo, num_empleado, fechanacimiento)"
+                        + "values ('"+nom+"', '"+appat+"', '"+apmat+"', '"+sex+"', '"+numeroempleado+"','"+fechanac+"')";
                 
                 int registro = set.executeUpdate(q);
                 

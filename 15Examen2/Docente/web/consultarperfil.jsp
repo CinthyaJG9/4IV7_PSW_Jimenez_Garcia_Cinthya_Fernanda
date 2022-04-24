@@ -25,7 +25,7 @@
                     <th>Sexo</th>
                     <th>Fecha de nacimiento</th>
                     <th>Editar</th>
-                    <th>Borrar</th>
+                    
                 </tr>
             </thead>
             <tbody>
@@ -67,8 +67,8 @@
                     <td><%=rs.getString("nombre")%></td>
                     <td><%=rs.getString("appat")%></td>
                     <td><%=rs.getString("apmat")%></td>
-                    <td><%=rs.getString("sex")%></td>
-                    <td><%=rs.getString("fechanac")%></td>
+                    <td><%=rs.getString("sexo")%></td>
+                    <td><%=rs.getString("fechanacimiento")%></td>
                     <td><a href="editarperfil.jsp?id=<%=rs.getInt("num_empleado")%>" >Editar</a></td>
                     
                 </tr>

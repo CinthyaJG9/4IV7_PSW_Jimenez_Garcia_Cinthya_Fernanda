@@ -1,9 +1,8 @@
 <%-- 
-    Document   : buscar
-    Created on : 21/04/2022, 07:39:22 PM
+    Document   : editarperfil
+    Created on : 23/04/2022, 10:08:15 PM
     Author     : cferg
 --%>
-
 
 <%@page contentType="text/html" language="java"
         import="java.sql.*, java.util.*, java.text.*" 
@@ -15,29 +14,10 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <div class="navbar">
-            <input type="search" name="buscar" class="form-control">
-            <input type="submit" name="accion">
-            
-        </div>
-        <table border="2">
-            <thead>
-                <tr>
-                    <th>Número de empleado</th>
-                    <th>Nombre</th>
-                    <th>Apellido Paterno</th>
-                    <th>Apellido Materno</th>
-                    <th>Sexo</th>
-                    <th>Fecha de nacimiento</th>
-                    <th>Editar</th>
-                    <th>Borrar</th>
-                </tr>
-            </thead>
-            <tbody>
-                
-            
         
-        
+        <form name="editar" action="actualizar.jsp" method="post" >
+            
+
         
         <% 
         //esa codigo java
@@ -57,9 +37,9 @@
             con = DriverManager.getConnection(URL, userName, password);
             
             try{
-                //necesitamos los parametros
                 int id = Integer.parseInt(request.getParameter("id"));
-                String q = "select * from docentereal where num_empleado="+id;
+                //necesitamos los parametros
+                String q = "select * from docentereal where num_empleado ="+id;
                 
                 set = con.createStatement();
                 
@@ -68,20 +48,46 @@
                 while(rs.next()){
                 
                 %>
-                <tr>
-                    <td><%=rs.getInt("num_empleado")%></td>
-                    <td><%=rs.getString("nombre")%></td>
-                    <td><%=rs.getString("appat")%></td>
-                    <td><%=rs.getString("apmat")%></td>
-                    <td><%=rs.getString("sexo")%></td>
-                    <td><%=rs.getString("fechanacimiento")%></td>
-                   
-                    
-                </tr>
+                
+                <label>Boleta</label>
+                <br>
+                <input type="hidden" name="numempleado2" 
+                       value="<%=rs.getInt("numempleado")%>" >
+                <br>
+                <label>Nombre</label>
+                <br>
+                <input type="text" name="nombre2" 
+                       value="<%=rs.getString("nombre")%>" >
+                <br>
+                <label>Apellido Paterno</label>
+                <br>
+                <input type="text" name="appat2" 
+                       value="<%=rs.getString("appat")%>" >
+                <br>
+                <label>Apellido Materno</label>
+                <br>
+                <input type="text" name="apmat2" 
+                       value="<%=rs.getString("apmat")%>" >
+                <br>
+                <label>Telefono</label>
+                <br>
+                <input type="text" name="sex2" 
+                       value="<%=rs.getString("sexo")%>" >
+                <br>
+                <label>Telefono</label>
+                <br>
+                <input type="text" name="fechanac2" 
+                       value="<%=rs.getString("fechanacimiento")%>" >
+                <br>
+                <input type="submit" value="Actualizar Datos" >
+                <br>
+                <input type="reset" value="Borrar Datos" >
+                
+                
                 <%
                     }
             }catch(SQLException es){
-                System.out.println("Error al registrar en la tabla");
+                System.out.println("Error al actualizar en la tabla");
                 System.out.println(es.getMessage());
                 %>
                  <h1>Error al consultar la tabla de la tabla</h1>
@@ -102,11 +108,10 @@
         
         
         %>
-        </tbody>
-        </table>
+        </form>
         <br>
         <a href="index.html" >Regresar a Principal</a>
         <br>
-        <a href="registrardatos.html" >Registrar</a>     
+     
     </body>
 </html>
