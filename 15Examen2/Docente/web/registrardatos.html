@@ -9,6 +9,8 @@ and open the template in the editor.
         <link rel="stylesheet" href="style.css" type="text/css"/>
 
         <title>TODO supply a title</title>
+        <link rel="stylesheet" a href="css/style.css">
+
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
@@ -16,7 +18,7 @@ and open the template in the editor.
         <body>
         <div class="formulario">
             <form name="formulario" method="post"
-                action="registrardatos.jsp">
+                action="registrardatos.jsp" function="validar">
                 <label>Nombre</label>
                 <br>
                 <input type="text" name="nombre" onkeypress="return validarn(event)">
@@ -47,13 +49,16 @@ and open the template in the editor.
                 <input type="text" name="numempleado">
                 <br>
                 <br>
-                <input type="submit" value="Registrar" >
+                <input type="submit" value="Registrar" onclick="validar()">
                 <br>
                 <input type="reset" value="Borrar Datos">
             </form>
             <br>
             <a href="index.html" >Regresar</a>
         </div>
+             <script src="js/validar.js">
+
+    </script>
     </body>
    
 </html>
